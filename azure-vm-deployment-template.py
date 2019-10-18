@@ -1,5 +1,10 @@
 """
-Python Azure Script
+Microsoft Azure Python Script - Resource Group Creation Example
+Mickal Speller for THATCLIGUY.com
+Sept 2019, version 1.0
+
+Note: Script is free to use without any warranty and/or support from Mickal Speller (thatcliguy.com).
+For full and complete details, please reference Microsoft Azure website for full details and usage for the Azure Python API
 """
 
 from azure.common.credentials import ServicePrincipalCredentials
