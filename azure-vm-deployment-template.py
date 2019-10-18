@@ -1,3 +1,7 @@
+"""
+Python Azure Script
+"""
+
 from azure.common.credentials import ServicePrincipalCredentials
 from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.compute import ComputeManagementClient
@@ -170,7 +174,7 @@ if __name__ == "__main__":
     )
 
 create_resource_group(resource_group_client)
-#input('Resource group created. Press enter to continue...')
+print("\nCreating Resource Group")
 
 create_availability_set(compute_client)
 print("\nCreating Availability Set")
@@ -191,4 +195,4 @@ creation_result = create_vm(network_client, compute_client)
 print("\nCreating Virtual Machine")
 
 start_vm(compute_client)
-print("\nComplete. Starting Virtual Machine")
+print("\nComplete! Starting Virtual Machine")
