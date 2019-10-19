@@ -94,7 +94,7 @@ def create_nic(network_client):
     )
     publicIPAddress = network_client.public_ip_addresses.get(
         GROUP_NAME,
-        'mySubnet'
+        'myIPAddress'
     )
     nic_params = {
         'location': LOCATION,
